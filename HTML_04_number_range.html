@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type="number"(숫자 입력) "range"(슬라이드 막대로 숫자 지정하기)</title>
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>등록 정보</legend>
+            <ul>
+                <li>
+                    <label class="reg" for="member">참여인원<small>(최대10명)</small></label>
+                    <input type="number" id="member" value="1" min="0" max="10" step="1">
+                </li>
+                <li>
+                    <label class="reg" for="stuffs">지원물품<small>(1인당5개)</small></label>
+                    <input type="number" id="member" value="1" min="0" max="50" step="5">
+                </li>
+                <li>
+                    <label class="reg" for="satis">희망 단계</label><small>(하,중,상)</small></label>
+                    <input type="range" id="member" value="1" min="1" max="3" >
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
